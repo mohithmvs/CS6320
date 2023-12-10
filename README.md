@@ -16,7 +16,7 @@ mkTestbench.v: Generated Verilog file of the test bench.
 
 EE20B072_EE20B121_project_CS6230.pdf: Final report containing all design details and synthesis results.
 
-Results: Folder containing synthesis results.
+Reports: Folder containing synthesis results.
 
 ## How to Compile
 
