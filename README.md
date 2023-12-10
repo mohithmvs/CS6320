@@ -1,6 +1,6 @@
-#CS6320 - Pipelined Double Precision Floating Point Adder
+# CS6320 - Pipelined Double Precision Floating Point Adder
 
-#Overview
+## Overview
 This repository contains the source code and files for a pipelined double-precision (fp64) floating-point adder designed for CS6320 course project. The primary files include the main design (FPAdder64.bsv), the test bench (Testbench.bsv), and their corresponding generated Verilog files (mkFPAdder64.v and mkTestbench.v).
 
 Project Details
@@ -16,7 +16,7 @@ EE20B072_EE20B121_project_CS6230.pdf: Final report containing all design details
 
 Results: Folder containing synthesis results.
 
-##How to Compile
+## How to Compile
 Ensure that FPAdder64.bsv and Testbench.bsv are in the same directory.
 
 Open a terminal and navigate to the directory containing the files.
@@ -36,7 +36,7 @@ bsc -o sim -e mkTestbench mkTestbench.v
 Run the simulation:
 ./sim
 
-##Additional Information
+## Additional Information
 For detailed information about the design, implementation, and synthesis results, refer to the document EE20B072_EE20B121_project_CS6230.pdf in the repository.
 
 
