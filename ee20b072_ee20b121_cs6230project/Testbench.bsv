@@ -11,7 +11,7 @@ module mkTestbench (Empty);
     endrule
 
     rule rl_finish;
-        let res = mod.get_res();
+        let res = mod.get_result();
 
         $display("\ntime at which it completed - %0t", $time);
         $display("(-102.5 + 11.5) = %h", res);
