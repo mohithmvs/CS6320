@@ -14,7 +14,7 @@ module mkTestbench (Empty);
         let res = mod.get_result();
 
         $display("\ntime at which it completed - %0t", $time);
-        $display("(-102.5 + 11.5) = %h", res);
+        $display("(-102.2 + 11.5) = %h", res);
         $finish();
     endrule
 
