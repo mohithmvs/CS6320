@@ -186,9 +186,7 @@ module mkFPAdder64 (FPAdder64_ifc);
 
     // Rule for assigning final result
     rule assignFinalResult(stage3);
-    	if(input_1_64==64'b0)final_sum_64 <= input_2_64;
-    	else if(input_2_64==64'b0)final_sum_64 <= input_1_64;
-        else final_sum_64 <= {sign_64_3, exponent3, sum_64_3[51:0]};
+	final_sum_64 <= {sign_64_3, exponent3, sum_64_3[51:0]};
         if(final_sum_64==64'b0)got_final <= False;
         else got_final <= True;
     endrule
@@ -205,7 +203,7 @@ module mkFPAdder64 (FPAdder64_ifc);
     endmethod
 
     // Output mapping from registers
-    method ActionValue#(Bit#(64)) get_res() if (got_final && got_A && got_B);
+    method ActionValue#(Bit#(64)) get_result() if (got_final && got_A && got_B);
         return final_sum_64;
     endmethod
 
