@@ -22,18 +22,23 @@ Ensure that FPAdder64.bsv and Testbench.bsv are in the same directory.
 Open a terminal and navigate to the directory containing the files.
 
 Compile the main design:
+
 bsc -u -verilog FPAdder64.bsv
 
 Compile the test bench:
+
 bsc -u -verilog Testbench.bsv
 
 Compile for simulation:
+
 bsc -u -sim Testbench.bsv
 
 Build the simulation executable:
+
 bsc -o sim -e mkTestbench mkTestbench.v
 
 Run the simulation:
+
 ./sim
 
 ## Additional Information
